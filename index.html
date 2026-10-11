@@ -83,7 +83,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-vis
 @media(max-width:350px){.brand img{width:140px}.hero{padding-inline:16px}.section{padding-inline:16px}.chat-card,.booking-card{padding:18px}.form-row{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero-photo .slide{transform:none}}
 .reveal{opacity:1;transform:none;transition:none}.reveal.in{animation:arrive .65s ease both}@keyframes arrive{from{opacity:.25;transform:translateY(18px)}to{opacity:1;transform:none}}
-</style>
+.hero-copy::before{font-size:clamp(75px,24vw,110px);max-width:100%;overflow:hidden}.hero-photo .slide{transform:none}.hero-photo .slide.active{transform:none}</style>
 </head>
 <body>
 <header class="nav" id="nav">
@@ -110,7 +110,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-vis
   </div>
   <figure class="hero-photo reveal">
     <div class="slides"><img class="slide active" src="6-result-1.jpg" alt="תוצאת החלקה מהסלון של שי" fetchpriority="high"><img class="slide" src="7-result-2.jpg" alt="שיער ארוך ומבריק מהסלון של שי"><img class="slide" src="8-result-3.jpg" alt="שיער כהה וחלק מהסלון של שי"></div><div class="slide-controls"><button type="button" id="pauseSlides" aria-label="השהיית גלריה">Ⅱ</button><button type="button" class="dot selected" data-slide="0" aria-label="תמונה 1" aria-pressed="true"></button><button type="button" class="dot" data-slide="1" aria-label="תמונה 2" aria-pressed="false"></button><button type="button" class="dot" data-slide="2" aria-label="תמונה 3" aria-pressed="false"></button></div>
-    <figcaption>תוצאה אמיתית מהסלון</figcaption>
+    <figcaption>מתוך עמוד הסלון</figcaption>
   </figure>
 </section>
 
@@ -133,11 +133,11 @@ button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-vis
 
 <section id="results" class="section dark">
   <p class="eyebrow">העבודות מדברות</p>
-  <h2>תוצאות מהסלון</h2>
+  <h2>מתוך העבודות בעמוד הסלון</h2>
   <div class="gallery">
-    <figure class="reveal"><img loading="lazy" src="7-result-2.jpg" alt="שיער ארוך אחרי טיפול החלקה"><figcaption>תוצאה אמיתית מהסלון</figcaption></figure>
+    <figure class="reveal"><img loading="lazy" src="7-result-2.jpg" alt="שיער ארוך אחרי טיפול החלקה"><figcaption>מתוך עמוד הסלון</figcaption></figure>
     <figure class="reveal"><img loading="lazy" src="8-result-3.jpg" alt="שיער כהה, ישר ומבריק אחרי טיפול"><figcaption>גם לך מגיע שיער חלק</figcaption></figure>
-    <figure class="reveal"><img loading="lazy" src="6-result-1.jpg" alt="שיער חלק ומבריק אחרי החלקה בסלון"><figcaption>תוצאה אמיתית מהסלון</figcaption></figure>
+    <figure class="reveal"><img loading="lazy" src="6-result-1.jpg" alt="שיער חלק ומבריק אחרי החלקה בסלון"><figcaption>מתוך עמוד הסלון</figcaption></figure>
   </div>
   <div class="social">
     <p>עוד תוצאות, מבצעים וטיפים:</p>
@@ -178,7 +178,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-vis
 
 <button id="musicToggle" class="music-toggle" aria-pressed="false" type="button">♫ הפעלת מוזיקה</button><audio id="music" src="1-ambient.mp3" loop preload="none"></audio>
 <a class="fab" href="https://wa.me/972547588050" rel="noopener" aria-label="וואטסאפ">וואטסאפ</a>
-<script>window.SALON_CONFIG = Object.freeze({ showSampleReviews: true, emailEnabled: false, ownerEmail: 'salon@example.invalid', musicCredit: 'Original instrumental composed for this demo. Not Voyage Voyage.' });
+<script>window.SALON_CONFIG = Object.freeze({ showSampleReviews: true, emailEnabled: false, ownerEmail: 'salon@example.invalid', musicCredit: 'Original instrumental composed for this demo. Not Voyage Voyage. CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/' });
 
 const config=window.SALON_CONFIG||{};
 document.querySelector('#samples').hidden=!config.showSampleReviews;
