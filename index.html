@@ -9,12 +9,85 @@
 <meta property="og:title" content="Shay Hair Treatment - שיער חלק, בריא ומבריק">
 <meta property="og:description" content="החלקות אורגניות וקראטין, שיקום שיער, בוטוקס לשיער, גוונים ותספורות. רמת גן.">
 <meta property="og:image" content="6-result-1.jpg">
-<link rel="icon" href="4-icon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22220%22%20viewBox%3D%220%200%20600%20220%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%3E%3Cstop%20stop-color%3D%22%23eecac6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23caab79%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%222.3%22%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%22103%22%20r%3D%2264%22/%3E%3Cpath%20d%3D%22M112%2061c-52%200-62%2041-16%2043s31%2043-19%2043M73%2054c-32%2059%2052%2040%2034%2098M65%2072c-13%2048%2047%2028%2045%2057%22/%3E%3C/g%3E%3Ctext%20x%3D%22180%22%20y%3D%22125%22%20fill%3D%22%23f6efe9%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2289%22%20letter-spacing%3D%228%22%3ESHAY%3C/text%3E%3Ctext%20x%3D%22184%22%20y%3D%22158%22%20fill%3D%22%23d8b48f%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2216%22%20letter-spacing%3D%225%22%3EHAIR%20TREATMENT%3C/text%3E%3C/svg%3E%0A">
+<style>:root{--bg:#1c273d;--bg2:#141c2d;--ink:#f6efe9;--mut:#b9bfcc;--rose:#e2b4c0;--gold:#d8b48f;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Heebo","Assistant",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;background:rgba(20,28,45,.96);border-bottom:1px solid rgba(255,255,255,.07)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em}
+.brand img{border-radius:10px}
+.nav nav{display:none;gap:26px;color:var(--mut)}
+.nav nav a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;background:linear-gradient(135deg,var(--rose),var(--gold));color:#1c273d;font-weight:700;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.small{padding:8px 18px;font-size:.95rem}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(226,180,192,.6)}
+.hero{display:grid;gap:28px;padding:34px 20px 20px;max-width:1150px;margin:0 auto;align-items:center}
+.eyebrow{color:var(--rose);letter-spacing:.14em;font-size:.82rem;text-transform:uppercase;margin-bottom:10px}
+h1{font-size:clamp(2.6rem,11vw,5.2rem);line-height:1.05;font-weight:900}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--rose),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.9rem,7vw,3rem);line-height:1.15;font-weight:800;margin-bottom:26px}
+.lead{color:var(--mut);font-size:1.1rem;margin:18px 0 26px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta.center{justify-content:center}
+.hero-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;max-height:70vh;margin:0 auto;width:100%;max-width:440px;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+figcaption{position:absolute;inset-inline:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(transparent,rgba(10,14,24,.85));font-size:.95rem}
+.marquee{overflow:hidden;border-block:1px solid rgba(255,255,255,.08);margin:34px 0;padding:14px 0;background:var(--bg2)}
+.track{display:flex;gap:44px;width:max-content;animation:slide 32s linear infinite;will-change:transform}
+.track span{white-space:nowrap;font-weight:700;font-size:1.15rem;color:var(--gold)}
+.track span::before{content:"✦";margin-inline-end:44px;color:var(--rose)}
+@keyframes slide{to{transform:translateX(50%)}}
+.section{max-width:1150px;margin:0 auto;padding:46px 20px}
+.section.dark{max-width:none;background:var(--bg2)}
+.section.dark>*{max-width:1110px;margin-inline:auto}
+.cards{display:grid;gap:14px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:22px}
+.card .num{color:var(--rose);font-weight:800;font-size:.9rem}
+.card h3{font-size:1.35rem;margin:6px 0}
+.card p{color:var(--mut)}
+.gallery{display:grid;gap:14px}
+.gallery figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4}
+.gallery img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.social{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.social p{width:100%;color:var(--mut)}
+.why{list-style:none;display:grid;gap:14px}
+.why li{padding:20px;border-radius:var(--r);border-inline-start:4px solid var(--rose);background:rgba(255,255,255,.04)}
+.why b{display:block;font-size:1.2rem;margin-bottom:4px}
+.why span{color:var(--mut)}
+.contact{text-align:center}
+.contact .lead{margin-inline:auto}
+.addr{margin:26px 0 12px;font-size:1.15rem}
+footer{text-align:center;padding:34px 20px 100px;color:var(--mut);font-size:.9rem}
+footer img{margin:0 auto 10px;border-radius:18px;width:84px;height:84px}
+.fab{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:30;padding:13px 22px;border-radius:999px;background:#25d366;color:#0b2e17;font-weight:800;box-shadow:0 8px 22px rgba(0,0,0,.4)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (min-width:760px){
+ .nav{padding:12px 40px}.nav nav{display:flex}
+ .hero{grid-template-columns:1.1fr .9fr;padding-top:60px;gap:50px}
+ .cards{grid-template-columns:repeat(3,1fr)}
+ .gallery{grid-template-columns:repeat(3,1fr)}
+ .why{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.track{animation:none}.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+/* Brand refresh */
+:root{--bg:#111b2c;--bg2:#0b1321;--r:26px}
+button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--rose);outline-offset:4px}button.btn{border:0}
+.brand img{width:168px;height:58px;border-radius:0}.nav{padding-block:6px}.hero{padding-top:40px}.hero-copy{position:relative}.hero-copy::before{content:'SHAY';position:absolute;top:-20px;right:0;font:110px Georgia,serif;letter-spacing:8px;color:rgba(226,180,192,.05);z-index:-1}h1{font-weight:600;letter-spacing:-.055em;line-height:1.12}.hero-photo{border:1px solid rgba(226,180,192,.35);box-shadow:14px 14px 0 rgba(216,180,143,.1);isolation:isolate}.slides{position:absolute;inset:0}.hero-photo .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease,transform 5.5s ease;transform:scale(1.04)}.hero-photo .slide.active{opacity:1;transform:scale(1)}.slide-controls{position:absolute;top:14px;left:14px;display:flex;gap:10px;align-items:center;z-index:3;direction:ltr}.slide-controls button{border:1px solid #ffffff88;background:#111b2ccc;color:white;min-width:44px;min-height:44px;border-radius:50%}.slide-controls .dot{min-width:44px;background:radial-gradient(circle,#ffffff55 4px,transparent 5px)}.slide-controls .dot.selected{background:radial-gradient(circle,var(--rose) 5px,transparent 6px)}.hero-photo figcaption{font-size:14px;letter-spacing:.04em}.card{transition:transform .3s}.card:hover{transform:translateY(-5px)}.section{padding-block:64px}.card .num{font-family:Georgia,serif;font-size:24px;font-weight:400}.card h3{margin-block:14px 8px}.sample-section{border-top:1px solid #ffffff16}.sample-rating{border:1px dashed #d8b48f88;padding:24px;border-radius:var(--r);margin-bottom:18px}.sample-rating span{font:44px Georgia,serif;direction:ltr;display:block}.sample-rating p,.sample-note{color:var(--mut);font-size:14px}.sample-cards{display:grid;gap:16px}.sample-label{display:block;color:var(--gold);font-size:13px;margin-bottom:12px}.sample-cards p{font-size:20px}.sample-cards small{display:block;margin-top:12px;color:var(--mut)}.sample-note{margin-top:16px}
+.assistant-grid{display:grid;gap:22px}.chat-card,.booking-card{padding:24px;border:1px solid #ffffff1c;border-radius:var(--r);background:#ffffff04}.chat-card h3,.booking-card h3{font-size:24px;font-weight:600;margin-bottom:8px}.status-dot{font-size:13px;color:var(--mut)}.status-dot:before{content:'●';color:#a8c3ac;margin-inline-end:7px}.chat-log{height:250px;overflow:auto;margin-block:22px;display:flex;flex-direction:column;gap:12px}.bubble{padding:14px;border-radius:16px 16px 0 16px;background:#ffffff09;color:var(--ink);font-size:15px;white-space:pre-wrap}.bubble.user{background:#e2b4c01a;margin-inline-start:26px}.quick{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.quick button{border:1px solid #e2b4c04d;background:transparent;border-radius:99px;padding:9px 13px;color:var(--rose);min-height:44px}.chat-input{display:flex;gap:8px}.chat-input input{min-width:0;flex:1}.chat-input .btn{padding-inline:16px}label{display:block;font-size:14px;color:var(--mut);margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ffffff30;background:#111b2c;color:var(--ink);min-height:46px}input[type=date],input[type=time]{color-scheme:dark;min-width:0}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-row>div{min-width:0}.booking-card .btn{width:100%;margin-top:16px}.demo-notice{font-size:14px;background:#d8b48f12;border-inline-start:3px solid var(--gold);padding:14px;margin-block:18px;color:#e8d9c6}.privacy-note{font-size:12px;color:var(--mut);margin-top:12px}.result-card{padding:18px;background:#e2b4c016;border:1px solid #e2b4c055;border-radius:14px;margin-top:20px;white-space:pre-wrap;overflow-wrap:anywhere}.music-toggle{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom));inset-inline-end:16px;z-index:30;border:1px solid #e2b4c080;color:var(--rose);background:#111b2cf5;padding:13px 16px;border-radius:99px;min-height:48px;font-size:13px}.fab{font-size:14px;padding:13px 18px}footer img{width:240px;height:88px;border-radius:0}footer{padding-bottom:100px}
+@media(min-width:760px){.hero{padding-block:72px}.assistant-grid{grid-template-columns:1fr 1fr}.sample-cards{grid-template-columns:1fr 1fr}.hero-photo{max-height:640px}.section{padding-block:80px}}
+@media(max-width:350px){.brand img{width:140px}.hero{padding-inline:16px}.section{padding-inline:16px}.chat-card,.booking-card{padding:18px}.form-row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero-photo .slide{transform:none}}
+.reveal{opacity:1;transform:none;transition:none}.reveal.in{animation:arrive .65s ease both}@keyframes arrive{from{opacity:.25;transform:translateY(18px)}to{opacity:1;transform:none}}
+</style>
 </head>
 <body>
 <header class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="Shay Hair Treatment"><img src="4-icon.png" alt="" width="40" height="40"><span>Shay</span></a>
+  <a class="brand" href="#top" aria-label="Shay Hair Treatment"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22220%22%20viewBox%3D%220%200%20600%20220%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%3E%3Cstop%20stop-color%3D%22%23eecac6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23caab79%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%222.3%22%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%22103%22%20r%3D%2264%22/%3E%3Cpath%20d%3D%22M112%2061c-52%200-62%2041-16%2043s31%2043-19%2043M73%2054c-32%2059%2052%2040%2034%2098M65%2072c-13%2048%2047%2028%2045%2057%22/%3E%3C/g%3E%3Ctext%20x%3D%22180%22%20y%3D%22125%22%20fill%3D%22%23f6efe9%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2289%22%20letter-spacing%3D%228%22%3ESHAY%3C/text%3E%3Ctext%20x%3D%22184%22%20y%3D%22158%22%20fill%3D%22%23d8b48f%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2216%22%20letter-spacing%3D%225%22%3EHAIR%20TREATMENT%3C/text%3E%3C/svg%3E%0A" alt="SHAY Hair Treatment" width="170" height="62"></a>
   <nav>
     <a href="#services">טיפולים</a>
     <a href="#results">תוצאות</a>
@@ -27,8 +100,8 @@
 <main id="top">
 <section class="hero">
   <div class="hero-copy">
-    <p class="eyebrow reveal">Professional Hair Treatment · רמת גן</p>
-    <h1 class="reveal">שיער חלק,<br><em>בריא ומבריק.</em></h1>
+    <p class="eyebrow reveal">SHAY HAIR TREATMENT · רמת גן</p>
+    <h1 class="reveal">השיער שלך.<br><em>הרגע שלך.</em></h1>
     <p class="lead reveal">מתמחה בכל סוגי ההחלקות, אורגנית וקראטין, בשיקום שיער, בבוטוקס לשיער, בגוונים ובתספורות. גם לך מגיע שיער חלק.</p>
     <div class="cta reveal">
       <a class="btn" href="https://wa.me/972547588050" rel="noopener">שלחו הודעה בוואטסאפ</a>
@@ -36,7 +109,7 @@
     </div>
   </div>
   <figure class="hero-photo reveal">
-    <img src="6-result-1.jpg" alt="תוצאת החלקה: שיער ארוך, חלק ומבריק בסלון של שי" fetchpriority="high">
+    <div class="slides"><img class="slide active" src="6-result-1.jpg" alt="תוצאת החלקה מהסלון של שי" fetchpriority="high"><img class="slide" src="7-result-2.jpg" alt="שיער ארוך ומבריק מהסלון של שי"><img class="slide" src="8-result-3.jpg" alt="שיער כהה וחלק מהסלון של שי"></div><div class="slide-controls"><button type="button" id="pauseSlides" aria-label="השהיית גלריה">Ⅱ</button><button type="button" class="dot selected" data-slide="0" aria-label="תמונה 1" aria-pressed="true"></button><button type="button" class="dot" data-slide="1" aria-label="תמונה 2" aria-pressed="false"></button><button type="button" class="dot" data-slide="2" aria-label="תמונה 3" aria-pressed="false"></button></div>
     <figcaption>תוצאה אמיתית מהסלון</figcaption>
   </figure>
 </section>
@@ -59,7 +132,7 @@
 </section>
 
 <section id="results" class="section dark">
-  <p class="eyebrow">Results</p>
+  <p class="eyebrow">העבודות מדברות</p>
   <h2>תוצאות מהסלון</h2>
   <div class="gallery">
     <figure class="reveal"><img loading="lazy" src="7-result-2.jpg" alt="שיער ארוך אחרי טיפול החלקה"><figcaption>תוצאה אמיתית מהסלון</figcaption></figure>
@@ -83,6 +156,8 @@
   </ul>
 </section>
 
+<section id="samples" class="section sample-section" hidden><p class="eyebrow">תצוגת עיצוב בלבד · לא ביקורות אמיתיות</p><h2>מקום למילים טובות</h2><div class="sample-rating"><span>4.7 / 5</span><p>מספר לדוגמה בלבד. אינו דירוג Google ואינו מבוסס על לקוחות.</p></div><div class="sample-cards"><article class="card"><span class="sample-label">טקסט פיקטיבי לדוגמה</span><p>"חוויה נעימה, יחס אישי ותוצאה שאני אוהבת."</p><small>דמות לדוגמה א׳ · לא לקוחה אמיתית</small></article><article class="card"><span class="sample-label">טקסט פיקטיבי לדוגמה</span><p>"אהבתי את תשומת הלב לפרטים ואת התחושה בסלון."</p><small>דמות לדוגמה ב׳ · לא לקוחה אמיתית</small></article></div><p class="sample-note">אזור זה הוא הדגמה עיצובית. יש להחליף בביקורות מאומתות לפני שימוש שיווקי.</p></section>
+<section id="assistant" class="section assistant-section"><p class="eyebrow">נעים להכיר</p><h2>בואו נדבר על השיער שלך</h2><p class="lead">עוזר אוטומטי לשאלות על הסלון והכנת בקשת תור. אינו מאשר זמינות או תורים.</p><div class="assistant-grid"><div class="chat-card"><h3>העוזר של שי</h3><p class="status-dot">מידע מהסלון · מענה אוטומטי</p><div id="chatLog" class="chat-log" role="log" aria-live="polite"><p class="bubble">היי! אפשר לשאול על טיפולים, כתובת ודרכי יצירת קשר. לקביעת תור מלאו את הבקשה ליד.</p></div><div class="quick"><button data-q="אילו טיפולים יש?">טיפולים</button><button data-q="מה הכתובת?">איך מגיעים?</button><button data-q="מה המחירים?">מחירים</button></div><form id="chatForm"><label for="question">מה תרצו לדעת?</label><div class="chat-input"><input id="question" maxlength="500" required placeholder="כתבו שאלה קצרה"><button class="btn" type="submit">שליחה</button></div></form></div><div class="booking-card"><h3>בקשת תור</h3><div class="demo-notice">מצב הדגמה: אין חיבור למייל ואין שליחה לסלון. שום תור לא נשמר. לתיאום אמיתי התקשרו או פנו בוואטסאפ.</div><form id="bookingForm"><label for="name">שם</label><input id="name" name="name" maxlength="80" required autocomplete="name"><label for="phone">טלפון</label><input id="phone" name="phone" type="tel" dir="ltr" required pattern="[+0-9 ()-]{9,20}" autocomplete="tel"><label for="service">טיפול מבוקש</label><select id="service" name="service"><option>החלקה אורגנית</option><option>קראטין</option><option>שיקום שיער</option><option>בוטוקס לשיער</option><option>גוונים</option><option>תספורת</option><option>ייעוץ</option></select><div class="form-row"><div><label for="date">יום מועדף</label><input id="date" name="date" type="date" required></div><div><label for="time">שעה מועדפת</label><input id="time" name="time" type="time" required></div></div><label for="notes">משהו שחשוב שנדע? (לא חובה)</label><textarea id="notes" name="notes" maxlength="500" rows="2"></textarea><button class="btn" type="submit">הכנת בקשה לדוגמה</button><p class="privacy-note">הפרטים משמשים לתצוגת הבקשה בלבד. אינם נשמרים במאגר או נשלחים במייל.</p></form><div id="bookingResult" role="status" aria-live="polite"></div></div></div></section>
 <section id="contact" class="section contact">
   <p class="eyebrow">צור קשר</p>
   <h2>רוצים שיער חלק? נקבע.</h2>
@@ -97,11 +172,26 @@
 </main>
 
 <footer>
-  <img src="logo.jpg" alt="Shay Professional Hair Treatment" width="120" height="120">
+  <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22220%22%20viewBox%3D%220%200%20600%20220%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%3E%3Cstop%20stop-color%3D%22%23eecac6%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23caab79%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%222.3%22%3E%3Ccircle%20cx%3D%2290%22%20cy%3D%22103%22%20r%3D%2264%22/%3E%3Cpath%20d%3D%22M112%2061c-52%200-62%2041-16%2043s31%2043-19%2043M73%2054c-32%2059%2052%2040%2034%2098M65%2072c-13%2048%2047%2028%2045%2057%22/%3E%3C/g%3E%3Ctext%20x%3D%22180%22%20y%3D%22125%22%20fill%3D%22%23f6efe9%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2289%22%20letter-spacing%3D%228%22%3ESHAY%3C/text%3E%3Ctext%20x%3D%22184%22%20y%3D%22158%22%20fill%3D%22%23d8b48f%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2216%22%20letter-spacing%3D%225%22%3EHAIR%20TREATMENT%3C/text%3E%3C/svg%3E%0A" alt="SHAY Hair Treatment" width="240" height="88">
   <p>© Shay Hair Treatment · ארלוזורוב 25, רמת גן</p>
 </footer>
 
+<button id="musicToggle" class="music-toggle" aria-pressed="false" type="button">♫ הפעלת מוזיקה</button><audio id="music" src="1-ambient.mp3" loop preload="none"></audio>
 <a class="fab" href="https://wa.me/972547588050" rel="noopener" aria-label="וואטסאפ">וואטסאפ</a>
-<script src="app.js" defer></script>
+<script>window.SALON_CONFIG = Object.freeze({ showSampleReviews: true, emailEnabled: false, ownerEmail: 'salon@example.invalid', musicCredit: 'Original instrumental composed for this demo. Not Voyage Voyage.' });
+
+const config=window.SALON_CONFIG||{};
+document.querySelector('#samples').hidden=!config.showSampleReviews;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.06});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.dot')];let active=0,paused=reduced;
+function showSlide(n){active=n;slides.forEach((s,i)=>s.classList.toggle('active',i===n));dots.forEach((d,i)=>{d.classList.toggle('selected',i===n);d.setAttribute('aria-pressed',String(i===n))})}
+dots.forEach((d,i)=>d.addEventListener('click',()=>showSlide(i)));const pause=document.querySelector('#pauseSlides');function pauseLabel(){pause.textContent=paused?'▶':'Ⅱ';pause.setAttribute('aria-label',paused?'הפעלת גלריה':'השהיית גלריה')}pauseLabel();pause.onclick=()=>{paused=!paused;pauseLabel()};setInterval(()=>{if(!paused&&!document.hidden)showSlide((active+1)%slides.length)},5000);
+const log=document.querySelector('#chatLog');function bubble(text,kind=''){const p=document.createElement('p');p.className='bubble '+kind;p.textContent=text;log.append(p);log.scrollTop=log.scrollHeight}
+let chatting=false;async function ask(question){if(chatting)return;chatting=true;bubble(question,'user');const button=document.querySelector('#chatForm button');button.disabled=true;try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question})});const b=await r.json();if(!r.ok)throw Error(b.error);bubble(b.answer)}catch(e){bubble('לא הצלחנו לקבל מענה כרגע. נסו שוב, או התקשרו לשי: 054-7588050.')}finally{chatting=false;button.disabled=false}}
+document.querySelector('#chatForm').onsubmit=e=>{e.preventDefault();const input=document.querySelector('#question');const q=input.value.trim();if(q){ask(q);input.value=''}};document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>ask(b.dataset.q));
+const form=document.querySelector('#bookingForm');document.querySelector('#date').min=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jerusalem',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());form.onsubmit=async e=>{e.preventDefault();const button=form.querySelector('button');button.disabled=true;const result=document.querySelector('#bookingResult');result.textContent='מכינים תצוגת בקשה...';try{const body=Object.fromEntries(new FormData(form));const r=await fetch('/api/booking',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const b=await r.json();if(!r.ok)throw Error(b.error);const card=document.createElement('div');card.className='result-card';card.textContent=b.message+'\n\nשם: '+b.summary.name+'\nטיפול: '+b.summary.service+'\nיום מועדף: '+b.summary.date+'\nשעה מועדפת: '+b.summary.time+'\nטלפון: '+b.summary.phone+'\n\nלתיאום אמיתי: 054-7588050';result.replaceChildren(card)}catch(e){result.textContent=e.message==='Failed to fetch'?'אין חיבור כרגע. נסו שוב או התקשרו לשי.':e.message}finally{button.disabled=false}};
+const music=document.querySelector('#music'),toggle=document.querySelector('#musicToggle');music.volume=.2;toggle.onclick=async()=>{if(music.paused){try{await music.play();toggle.textContent='♫ השתקת מוזיקה';toggle.setAttribute('aria-pressed','true')}catch{toggle.textContent='לא ניתן לנגן · נסו שוב'}}else{music.pause();toggle.textContent='♫ הפעלת מוזיקה';toggle.setAttribute('aria-pressed','false')}};
+</script>
 </body>
 </html>
